@@ -27,5 +27,5 @@ RUN wget https://download.db-ip.com/free/dbip-country-lite-2020-11.mmdb.gz && \
 
 
 EXPOSE 7890
-ENTRYPOINT ["/usr/local/bin/goaccess"]
+ENTRYPOINT ["/usr/local/bin/goaccess --geoip-database=/var/lib/GeoIp/dbip-country-lite-2020-11.mmdb"]
 CMD ["--help"]
