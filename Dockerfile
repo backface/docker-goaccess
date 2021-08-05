@@ -24,8 +24,8 @@ WORKDIR /usr/share/GeoIP
 
 COPY geoip_update.sh .
 RUN ./geoip_update.sh
-RUN wget https://download.db-ip.com/free/dbip-country-lite-2020-11.mmdb.gz 
-RUN gunzip dbip-country-lite-2020-11.mmdb.gz
+RUN wget https://download.db-ip.com/free/dbip-country-lite-2021-08.mmdb.gz
+RUN gunzip dbip-country-lite-2021-08.mmdb.gz
 
 COPY goaccess.conf /usr/local/etc/goaccess.conf
 
